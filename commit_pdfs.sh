@@ -6,8 +6,14 @@ for file in *.xopp ; do xournalpp -p "../pdfs/${file%.xopp}.pdf" "${file}" &> /d
 raws=$(ls -l . | wc -l)
 curr_pdfs=$(ls -l ../pdfs/ | wc -l)
 
-while [ $raws != $curr_pdfs ]
+echo "Raws $raws"
+echo "PDFs $curr_pdfs"
+
+while [[ $raws != $curr_pdfs ]]
 do
+	echo "Raws $raws"
+	echo "PDFs $curr_pdfs"
+	echo shleep
 	sleep 1
 	curr_pdfs=$(ls -l ../pdfs/ | wc -l)
 done
