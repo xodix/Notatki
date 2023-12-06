@@ -16,7 +16,9 @@ echo "Created PDFs"
 
 d=$(date "+%d-%m %H:%M")
 
-git commit -a -m "Added notes from $d" && git push
+git add .
+git commit -m "Added notes from $d"
+git push
 
 echo "DONE"
 
