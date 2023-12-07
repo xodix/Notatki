@@ -15,6 +15,3 @@ done
 echo "Created PDFs"
 
 echo "DONE"
-
-
-# Kurwa prolog?
