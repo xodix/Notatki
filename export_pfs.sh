@@ -12,6 +12,4 @@ do
 	curr_pdfs=$(ls -l ../pdfs/ | wc -l)
 done
 
-echo "Created PDFs"
-
-echo "DONE"
+echo "CREATED PDFS"
